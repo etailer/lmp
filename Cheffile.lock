@@ -1,0 +1,43 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.4.4)
+    chef_gem (0.1.0)
+    chef_handler (1.1.5)
+    homebrew (1.5.4)
+    iis (2.0.2)
+      windows (>= 1.2.6)
+    mysql (4.1.2)
+      build-essential (~> 1.4)
+      homebrew (>= 0.0.0)
+      openssl (~> 1.1)
+      windows (>= 0.0.0)
+    openssl (1.1.0)
+    php (1.4.2)
+      build-essential (>= 0.0.0)
+      iis (>= 0.0.0)
+      mysql (>= 0.0.0)
+      windows (>= 0.0.0)
+      xml (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+    windows (1.30.0)
+      chef_handler (>= 0.0.0)
+    xml (1.2.2)
+      build-essential (>= 0.0.0)
+    yum (3.1.2)
+    yum-epel (0.3.4)
+      yum (~> 3.0)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: master
+  sha: 87f58d428c160337c1581ed1130a1a53d94e5126
+  specs:
+    rvm (0.9.1)
+      chef_gem (>= 0.0.0)
+
+DEPENDENCIES
+  mysql (>= 0)
+  php (>= 0)
+  rvm (>= 0)
+
